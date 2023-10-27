@@ -4,8 +4,12 @@
   become: true
 
   tasks:
-    # - name: Install postgresql-server
+     - name: Install postgresql-server
+       ansible.builtin.package:
+         name: postgresql-server
+         state: present
 
-    # - name: Run postgresql setup command
+     - name: Run postgresql setup command
+        
 
     # - name: Start and enable postgresql service
