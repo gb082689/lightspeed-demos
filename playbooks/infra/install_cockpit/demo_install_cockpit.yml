@@ -1,6 +1,6 @@
 ---
 - name: Install and configure Cockpit
-  hosts: servers
+  hosts: all
   become: true
   module_defaults:
       ansible.builtin.service:
